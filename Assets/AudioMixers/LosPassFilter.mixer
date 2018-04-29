@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: LosPassFilter
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 1d1b001df5cc5424782de4e5d2e93417
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1d1b001df5cc5424782de4e5d2e93417
+  m_Children: []
+  m_Volume: ea3494f87ee302e429b6020af31abee8
+  m_Pitch: 24bd46a1ef5bdfa40b4ab336163324c6
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: 244108961593704204}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 102fcbb6896036849b9c7c7d85b75a16
+  m_EffectName: Attenuation
+  m_MixLevel: b18fad3c42094e04bb597bba7406db0b
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 0d7a3ec86b561334d8e0a474a7acbaac
+  m_FloatValues:
+    27879038ea990e446ab1a6dbfac617c3: 1052
+    ea3494f87ee302e429b6020af31abee8: 2.4583216
+  m_TransitionOverrides: {}
+--- !u!244 &244108961593704204
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 73e58fd5894961842883516dd9c896c4
+  m_EffectName: Lowpass Simple
+  m_MixLevel: 4623a5f53acd67c49841a317a413afaa
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 27879038ea990e446ab1a6dbfac617c3
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
